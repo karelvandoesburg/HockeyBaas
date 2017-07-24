@@ -1,4 +1,11 @@
 //Introduction screen
+
+//First animations
+$(window).ready();
+
+//Resizing
+$(window).resize(changeSize);
+
 function changeSize() {
     changeButtonSize();
     changeBackgroundSize();
@@ -26,19 +33,16 @@ function changeBackgroundSize() {
     $('#intro-wrapper').css({"height" : height_picture});
 }
 
+//Click to go to the home page
 $('#start-button').on('click', function(){
+    
+    var $wrapper = $('#intro-wrapper');
         
-    $('#intro-wrapper').velocity({
+    $wrapper.velocity({
         'height' : '0px'
     }, 1500, 'swing');
     
 });
 
-$(window).ready(changeSize);
-$(window).ready(function(){
-    $('#intro-wrapper').after(homewrapper); 
-});
-$(window).resize(changeSize);
-
-var homewrapper = "<div id='home-wrapper'><nav id='navigation'><div id='menu-wrapper'><img id='logo' src = 'images/Hockeybaas_print_groen.jpg' alt='logo'><ul><li><a href='https://www.youtube.com'>Home</a></li><li><a href='https://www.youtube.com'>TalentenProgramma</a></li><li><a href='https://www.youtube.com'>HockeyBazen</a></li><li><a href='https://www.youtube.com'>Supportersclub</a></li><li><a href='https://www.youtube.com'>Ons Team</a></li><li><a href='https://www.youtube.com'>Contact</a></li></ul></div></nav><section id='section'></section></div>";
+//var homewrapper = "<div id='home-wrapper'><nav id='navigation'><div id='menu-wrapper'><img id='logo' src = 'images/Hockeybaas_print_groen.jpg' alt='logo'><ul><li><a href='https://www.youtube.com'>Home</a></li><li><a href='https://www.youtube.com'>TalentenProgramma</a></li><li><a href='https://www.youtube.com'>HockeyBazen</a></li><li><a href='https://www.youtube.com'>Supportersclub</a></li><li><a href='https://www.youtube.com'>Ons Team</a></li><li><a href='https://www.youtube.com'>Contact</a></li></ul></div></nav><section id='section'></section></div>";
 
