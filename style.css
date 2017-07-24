@@ -1,0 +1,149 @@
+*{
+    margin:0px auto;
+}
+
+#intro{
+    width:100%;
+}
+
+#intro-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+#intro-wrapper.gone {
+    animation: scroll 1s ease forwards;
+    animation-delay:0.3s;
+}
+
+#intro-logo{
+    border-width:2px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    position: absolute;
+    height:7%;
+    background-image: url("images/Hockeybaas_print_groen2.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-left:3%;
+    margin-top:2%;
+}
+
+#logo {
+    height:100px;
+    width: auto;
+    margin-top:12px;
+    float:left;
+    position: absolute;
+}
+
+#menu-wrapper{
+    text-align: left;
+    width: 1250px;
+    height: 130px;
+    
+}
+
+#navigation{
+    background-color: white;
+    width:auto;
+    height: 130px;
+}
+
+#navigation ul{
+    text-align: right;
+    list-style-type:none;
+    background-color: inherit;
+    float:right;
+}
+
+#navigation li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 59px;
+}
+
+#navigation a{
+    color:darkslategrey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:15px;
+    font-family: 'arial';
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    filter: blur(0.3px);
+}
+
+#navigation a:hover{
+    color:darkorange;
+}
+
+#navigation a:active{
+    color: lawngreen;
+}
+
+#section {
+    background-color: aliceblue;
+    height: 1500px;
+    width: auto;
+}
+
+@font-face {
+    font-family: Anton;
+    src: url('Oswald-Light.ttf');
+}
+
+/*
+@keyframes drop {
+    from {transform: translate3d(0px,-100px,0px);}
+    to {transform: translate3d(0px, 0px, 0px); opacity: 1;}
+}
+
+@keyframes click {
+    from {transform: translate3d(0px,0px,0px);}
+    to {transform: translate3d(0px, 0px, 0px); color:rgba(0,0,0,1);}
+}
+*/
+
+#start {
+    background-color:rgba(255, 183, 133, 0.20);
+    width:30%;
+    position: absolute;
+    margin-left:54%;
+    margin-top:30%;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    animation: drop 0.5s ease forwards;
+    animation-delay: 0.5s;
+    opacity:0;
+}
+
+#start-button {
+    width: 100%;
+    color:rgba(0,0,0,0);
+    position: relative;
+    background-color: white;
+    font-family: 'anton';
+    letter-spacing: 0.10em;
+    filter: blur(0.3px);
+    animation: click 0.4s forwards;
+    animation-delay:1s;
+}
+
+#intro-wrapper a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#start-text {
+    font-family: 'Anton';
+    color:white;
+}
+
+#homewrapper {
+    transform: translate3d(0px,0px,0px);
+    transition: transform 2s ease forwards;
+}
+
+
