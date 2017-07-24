@@ -4,7 +4,7 @@ function changeSize() {
     changeBackgroundSize();
 }
 
-//test
+//test alleen committen in branch
 
 function changeButtonSize() {
     var width_button = $('#start').width();
