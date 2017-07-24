@@ -5,6 +5,7 @@ function changeSize() {
 }
 
 //test alleen committen in branch
+//2e commit test
 
 function changeButtonSize() {
     var width_button = $('#start').width();
