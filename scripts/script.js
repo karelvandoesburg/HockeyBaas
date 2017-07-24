@@ -4,6 +4,8 @@ function changeSize() {
     changeBackgroundSize();
 }
 
+//test
+
 function changeButtonSize() {
     var width_button = $('#start').width();
     var top = width_button * 0.04;
