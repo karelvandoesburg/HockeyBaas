@@ -39,9 +39,7 @@ function backgroundAnimation() {
         'top' : '25%'
     }, {duration: 1300, easing: 'easeInOutQuart', delay: 400})
     
-    $startbutton.velocity({
-        'color' : 'rgba(0,0,0,1)'
-    }, {delay: 3000})
+    //color change $startbutton is done in CSS animations
 }
 
 //Resizing

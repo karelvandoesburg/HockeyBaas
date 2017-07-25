@@ -11,6 +11,12 @@
 
 /*Introduction page*/
 
+@keyframes hoverText {
+    0% {color: rgba(0,0,0,0);}
+    80% {color: rgba(0,0,0,0);}
+    100% {color: rgba(0,0,0,1);}
+}
+
 #intro-wrapper{
     position: absolute;
     overflow: hidden;
@@ -65,10 +71,11 @@
     letter-spacing: 0.10em;
     filter: blur(0.3px);
     cursor: pointer;
+    animation: hoverText 2.5s ease none;
 }
 
 #start-button:hover {
-    color:coral;
+    color:coral!important;
 }
 
 #intro-wrapper a {
