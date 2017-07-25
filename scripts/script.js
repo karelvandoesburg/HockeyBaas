@@ -14,6 +14,7 @@ var $intro = $('#intro');
 var $logo = $('#intro-logo');
 var $start = $('#start');
 var $cover = $('#intro-cover');
+var $startbutton = $('#start-button');
 
 function setMarginTop() {
     $homewrapper.css({
@@ -24,19 +25,23 @@ function setMarginTop() {
 function backgroundAnimation() {
     $cover.velocity({
         'top' : '1000px'
-    }, 2000, 'easeInOutQuart')
+    }, 1500, 'easeInOutQuart')
     
     $intro.velocity({
         'top' : '0px'
-    }, 2000, 'easeInOutQuart')
+    }, 1500, 'easeInOutQuart')
     
-//    $logo.velocity({
-//        'top' : '3%'
-//    }, 2000, 'easeInOutQuart')
+    $logo.velocity({
+        'top' : '3%'
+    }, {duration: 1300, easing: 'easeInOutQuart', delay: 500})
     
     $start.velocity({
         'top' : '58%'
-    }, 2000, 'easeInOutQuart')
+    }, {duration: 1300, easing: 'easeInOutQuart', delay: 400})
+    
+    $startbutton.velocity({
+        'color' : 'rgba(0,0,0,1)'
+    }, {delay: 3000})
 }
 
 //Resizing
@@ -73,13 +78,13 @@ function changeBackgroundSize() {
 
 
 //Click to go to the home page
-//$('#start-button').on('click', function(){
-//        
-//    $homewrapper.velocity({
-//        'top' : '0px';
-//    })
-//    
-//});
+$('#start-button').on('click', function(){
+        
+    $homewrapper.velocity({
+        'top' : '0px'
+    }, 1800, 'easeInOutQuart')
+    
+});
 
 //var homewrapper = "<div id='home-wrapper'><nav id='navigation'><div id='menu-wrapper'><img id='logo' src = 'images/Hockeybaas_print_groen.jpg' alt='logo'><ul><li><a href='https://www.youtube.com'>Home</a></li><li><a href='https://www.youtube.com'>TalentenProgramma</a></li><li><a href='https://www.youtube.com'>HockeyBazen</a></li><li><a href='https://www.youtube.com'>Supportersclub</a></li><li><a href='https://www.youtube.com'>Ons Team</a></li><li><a href='https://www.youtube.com'>Contact</a></li></ul></div></nav><section id='section'></section></div>";
 

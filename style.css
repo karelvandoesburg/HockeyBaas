@@ -58,7 +58,7 @@
 
 #start-button {
     width: 100%;
-    color:rgba(0,0,0,1);
+    color:rgba(0,0,0,0);
     position: relative;
     background-color: white;
     font-family: 'anton';
