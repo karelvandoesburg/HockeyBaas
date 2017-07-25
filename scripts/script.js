@@ -11,6 +11,7 @@ var $introwrapper = $('#intro-wrapper');
 var $intro = $('#intro');
 var $logo = $('#intro-logo');
 var $start = $('#start');
+var $cover = $('#intro-cover');
 
 function setMarginTop() {
     $homewrapper.css({
@@ -19,11 +20,12 @@ function setMarginTop() {
 }
 
 function backgroundAnimation() {
-    $intro.css({
-        'top' : $introwrapper.height() * (-1) -100 + 'px'
-    })
+    $cover.velocity({
+        'top' : '1000px'
+    }, 2000, 'easeInOutQuart')
+    
     $intro.velocity({
-        'top' : '0px',
+        'top' : '0px'
     }, 2000, 'easeInOutQuart')
 }
 
