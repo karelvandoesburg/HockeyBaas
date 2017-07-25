@@ -78,15 +78,19 @@ function changeBackgroundSize() {
 
 
 //Click to go to the home page
-//$startbutton.hover(function(){
-//    intro-blur.addClass('blur');
-//})
-
 $startbutton.on('click', function(){
+    
+    $logo.velocity({
+        'top' : '-400px'
+    }, {duration: 1300, easing: 'easeInOutQuart'})
+    
+    $start.velocity({
+        'top' : '-400px'
+    }, {duration: 1300, easing: 'easeInOutQuart', delay: 200})
         
     $homewrapper.velocity({
         'top' : '0px'
-    }, 1800, 'easeInOutQuart')
+    }, {duration: 1300, easing: 'easeInOutQuart',delay: 400})
     
 });
 
