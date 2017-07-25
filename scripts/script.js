@@ -1,7 +1,29 @@
 //Introduction screen
 
 //First animations
-$(window).ready();
+$(window).ready(function() {
+    setMarginTop();
+//    backgroundAnimation();
+});
+
+var $homewrapper = $('#home-wrapper');
+var $introwrapper = $('#intro-wrapper');
+var $intro = $('#intro');
+var $logo = $('#intro-logo');
+var $start = $('#start');
+
+function setMarginTop() {
+    $homewrapper.css({
+        'marginTop' : $(window).height() + 'px'
+    });
+}
+
+//function backgroundAnimation() {
+//    $intro.velocity({
+//        'marginTop' : '0px',
+//        'width' : $introwrapper.width()
+//    }, 4000)
+//}
 
 //Resizing
 $(window).resize(changeSize);
@@ -32,6 +54,8 @@ function changeBackgroundSize() {
     var height_picture = $(window).height();
     $('#intro-wrapper').css({"height" : height_picture});
 }
+
+
 
 //Click to go to the home page
 $('#start-button').on('click', function(){
