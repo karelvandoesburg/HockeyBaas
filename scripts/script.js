@@ -3,6 +3,8 @@
 //First animations
 $(window).ready(function() {
     setMarginTop();
+    changeButtonSize();
+    changeBackgroundSize();
     backgroundAnimation();
 });
 
@@ -26,6 +28,14 @@ function backgroundAnimation() {
     
     $intro.velocity({
         'top' : '0px'
+    }, 2000, 'easeInOutQuart')
+    
+//    $logo.velocity({
+//        'top' : '3%'
+//    }, 2000, 'easeInOutQuart')
+    
+    $start.velocity({
+        'top' : '58%'
     }, 2000, 'easeInOutQuart')
 }
 
@@ -63,15 +73,13 @@ function changeBackgroundSize() {
 
 
 //Click to go to the home page
-$('#start-button').on('click', function(){
-    
-    var $wrapper = $('#intro-wrapper');
-        
-    $wrapper.velocity({
-        'height' : '0px'
-    }, 1500, 'swing');
-    
-});
+//$('#start-button').on('click', function(){
+//        
+//    $homewrapper.velocity({
+//        'top' : '0px';
+//    })
+//    
+//});
 
 //var homewrapper = "<div id='home-wrapper'><nav id='navigation'><div id='menu-wrapper'><img id='logo' src = 'images/Hockeybaas_print_groen.jpg' alt='logo'><ul><li><a href='https://www.youtube.com'>Home</a></li><li><a href='https://www.youtube.com'>TalentenProgramma</a></li><li><a href='https://www.youtube.com'>HockeyBazen</a></li><li><a href='https://www.youtube.com'>Supportersclub</a></li><li><a href='https://www.youtube.com'>Ons Team</a></li><li><a href='https://www.youtube.com'>Contact</a></li></ul></div></nav><section id='section'></section></div>";
 
