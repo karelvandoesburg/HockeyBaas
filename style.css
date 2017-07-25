@@ -19,6 +19,10 @@
     background-color: red;
 }
 
+#intro {
+    width: 100%;
+}
+
 #intro-logo{
     border-width:2px;
     border-style: solid;
