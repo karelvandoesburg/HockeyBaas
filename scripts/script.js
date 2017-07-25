@@ -33,10 +33,10 @@ function backgroundAnimation() {
     
     $logo.velocity({
         'top' : '3%'
-    }, {duration: 1300, easing: 'easeInOutQuart', delay: 500})
+    }, {duration: 1300, easing: 'easeInOutQuart', delay: 600})
     
     $start.velocity({
-        'top' : '58%'
+        'top' : '25%'
     }, {duration: 1300, easing: 'easeInOutQuart', delay: 400})
     
     $startbutton.velocity({
@@ -78,7 +78,11 @@ function changeBackgroundSize() {
 
 
 //Click to go to the home page
-$('#start-button').on('click', function(){
+//$startbutton.hover(function(){
+//    intro-blur.addClass('blur');
+//})
+
+$startbutton.on('click', function(){
         
     $homewrapper.velocity({
         'top' : '0px'
