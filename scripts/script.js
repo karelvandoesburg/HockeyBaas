@@ -3,7 +3,7 @@
 //First animations
 $(window).ready(function() {
     setMarginTop();
-//    backgroundAnimation();
+    backgroundAnimation();
 });
 
 var $homewrapper = $('#home-wrapper');
@@ -18,12 +18,14 @@ function setMarginTop() {
     });
 }
 
-//function backgroundAnimation() {
-//    $intro.velocity({
-//        'marginTop' : '0px',
-//        'width' : $introwrapper.width()
-//    }, 4000)
-//}
+function backgroundAnimation() {
+    $intro.css({
+        'top' : $introwrapper.height() * (-1) -300 + 'px'
+    })
+    $intro.velocity({
+        'top' : '0px',
+    }, 2000, 'easeInOutQuart')
+}
 
 //Resizing
 $(window).resize(changeSize);
@@ -31,6 +33,7 @@ $(window).resize(changeSize);
 function changeSize() {
     changeButtonSize();
     changeBackgroundSize();
+    setMarginTop();
 }
 
 function changeButtonSize() {
