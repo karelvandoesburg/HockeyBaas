@@ -20,7 +20,7 @@ function setMarginTop() {
 
 function backgroundAnimation() {
     $intro.css({
-        'top' : $introwrapper.height() * (-1) -300 + 'px'
+        'top' : $introwrapper.height() * (-1) -100 + 'px'
     })
     $intro.velocity({
         'top' : '0px',
