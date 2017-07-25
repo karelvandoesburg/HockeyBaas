@@ -20,7 +20,9 @@
 }
 
 #intro {
+    position: absolute;
     width: 100%;
+    top: -2000px;
 }
 
 #intro-logo{
@@ -75,7 +77,7 @@
     position: absolute;
     text-align: center;
     width: 100%;
-    margin-top:4000px;
+    top:4000px;
 }
 
 #logo {

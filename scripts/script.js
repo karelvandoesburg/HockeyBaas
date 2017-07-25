@@ -14,7 +14,7 @@ var $start = $('#start');
 
 function setMarginTop() {
     $homewrapper.css({
-        'marginTop' : $(window).height() + 'px'
+        'top' : $(window).height() + 'px'
     });
 }
 
